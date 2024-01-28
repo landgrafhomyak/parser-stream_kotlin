@@ -1,0 +1,71 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../parser-stream/1.0/parser-stream-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "parser-stream",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "parser-stream.klib",
+          "url": "parser-stream-androidnativearm32-1.0.klib",
+          "size": 11947,
+          "sha512": "dc9a625a7a7295cb16578a6ff1a2bf980cba9f94a9378b2b4307f58feaceeafac9ce7a2dd22fd64a5d4ad338d6be66d1102553345feed13093f3f2c49ddc20a9",
+          "sha256": "11af9fefa9ca4975d3756d5a36de24c4f54cb80d16fc31818aac9c0c81e91884",
+          "sha1": "091bc536eae1c3f4002f0522d1c10a7b87db4454",
+          "md5": "6888a3f91a9be2ecd000996ca7b2850a"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "parser-stream-androidnativearm32-1.0-sources.jar",
+          "url": "parser-stream-androidnativearm32-1.0-sources.jar",
+          "size": 4129,
+          "sha512": "12bba45aa38be852ba2a684544a2b456fa7a5bc9d445d65c2dae35e527d41d61de74f06ef907b2438aaec9aa2f604d3702e47259d6d4c508d33ce98f337fb7df",
+          "sha256": "5455454e3d52e6f2ee3f75a0a1ae6bbde82b3ca383b417eeebeb2cb8761cc847",
+          "sha1": "31d710d5e442b7a17705293b961fc9d707bbb3b8",
+          "md5": "136565a5e41589e78c0f8be19169414c"
+        }
+      ]
+    }
+  ]
+}

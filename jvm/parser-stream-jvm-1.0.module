@@ -1,0 +1,113 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../parser-stream/1.0/parser-stream-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "parser-stream",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "parser-stream-jvm-1.0.jar",
+          "url": "parser-stream-jvm-1.0.jar",
+          "size": 8721,
+          "sha512": "27cab625e015986a5bc025faeaa3f74b91d7844c20cf8409f3398b7466a09f953ddc20b1ec3106dffa195830ec61243326ae46a9c6aae59ed924ec8ad089be78",
+          "sha256": "9dd828d8ddc3275b8649e340db6c430b88883068ba15ab18aab50b2b0b0f7ce2",
+          "sha1": "bb2941ff2b29c5133bd3b2b8e38bfb99bd2ac810",
+          "md5": "ec7a98c58e5c12975b1dd1a8426e9df9"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "parser-stream-jvm-1.0.jar",
+          "url": "parser-stream-jvm-1.0.jar",
+          "size": 8721,
+          "sha512": "27cab625e015986a5bc025faeaa3f74b91d7844c20cf8409f3398b7466a09f953ddc20b1ec3106dffa195830ec61243326ae46a9c6aae59ed924ec8ad089be78",
+          "sha256": "9dd828d8ddc3275b8649e340db6c430b88883068ba15ab18aab50b2b0b0f7ce2",
+          "sha1": "bb2941ff2b29c5133bd3b2b8e38bfb99bd2ac810",
+          "md5": "ec7a98c58e5c12975b1dd1a8426e9df9"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "parser-stream-jvm-1.0-sources.jar",
+          "url": "parser-stream-jvm-1.0-sources.jar",
+          "size": 4129,
+          "sha512": "12bba45aa38be852ba2a684544a2b456fa7a5bc9d445d65c2dae35e527d41d61de74f06ef907b2438aaec9aa2f604d3702e47259d6d4c508d33ce98f337fb7df",
+          "sha256": "5455454e3d52e6f2ee3f75a0a1ae6bbde82b3ca383b417eeebeb2cb8761cc847",
+          "sha1": "31d710d5e442b7a17705293b961fc9d707bbb3b8",
+          "md5": "136565a5e41589e78c0f8be19169414c"
+        }
+      ]
+    }
+  ]
+}
