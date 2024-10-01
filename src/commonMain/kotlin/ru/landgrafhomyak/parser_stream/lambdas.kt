@@ -9,18 +9,18 @@ annotation class SourceStreamLambdas
 
 @SourceStreamLambdas
 @Deprecated(message = _deprecationMessage, level = DeprecationLevel.WARNING)
-suspend inline fun <CS : CollectedSubstring> SourceStream<CS, *>.collect(limit: UInt, crossinline predicate: (Char) -> Boolean): CS? {
-    val wrappedPredicate = object : CharPredicate {
+suspend inline fun <CS : CollectedSubstring> SourceStream<*, CS>.collect(crossinline predicate: (Char) -> Boolean): CS? {
+    val wrappedPredicate = object : Predicate {
         override fun check(c: Char): Boolean = predicate(c)
     }
 
-    return this.collect(wrappedPredicate, limit)
+    return this.collect(wrappedPredicate)
 }
 
 @SourceStreamLambdas
 @Deprecated(message = _deprecationMessage, level = DeprecationLevel.WARNING)
-suspend inline fun <CS : CollectedSubstring> SourceStream<CS, *>.skip(crossinline predicate: (Char) -> Boolean): UInt {
-    val wrappedPredicate = object : CharPredicate {
+suspend inline fun <CS : CollectedSubstring> SourceStream<*, CS>.skip(crossinline predicate: (Char) -> Boolean): UInt {
+    val wrappedPredicate = object : Predicate {
         override fun check(c: Char): Boolean = predicate(c)
     }
 

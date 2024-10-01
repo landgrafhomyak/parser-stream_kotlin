@@ -12,7 +12,7 @@ interface CollectedSubstring {
     /**
      * Invoked when **parser** (not it's receiver) doesn't need this object anymore.
      * This function must be called even if substring is *already* passed to receiver
-     * (so receiver should mark this object by himself).
+     * (so receiver should increase reference counter of this object by himself if needed).
      */
     fun release()
 
