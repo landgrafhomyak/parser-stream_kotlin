@@ -11,11 +11,11 @@ package ru.landgrafhomyak.parser_stream
  * @see SourceStream.skip
  */
 interface Predicate {
-    /**
-     * Returns `true` if stream should continue [collecting][SourceStream.collect]
-     * or [skipping][SourceStream.skip] or `false` if it should stop.
-     * @see SourceStream.collect
-     * @see SourceStream.skip
-     */
-    fun check(c: Char): Boolean
+	/**
+	 * Returns `true` if stream should continue [collecting][SourceStream.collect]
+	 * or [skipping][SourceStream.skip] or `false` if it should stop.
+	 * @see SourceStream.collect
+	 * @see SourceStream.skip
+	 */
+	fun check(c: Char): Boolean
 }
