@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 /**
  * Function of AST-builder marked with this annotation generates parser error to parser output (not throws).

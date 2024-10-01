@@ -1,7 +1,7 @@
-/.gradle/
-/gradle/
-/gradlew*
+.gradle/
+gradle/
+gradlew*
 build/
-/.idea/
-/.kotlin/
-/kotlin-js-store/
+.idea/
+.kotlin/
+kotlin-js-store/

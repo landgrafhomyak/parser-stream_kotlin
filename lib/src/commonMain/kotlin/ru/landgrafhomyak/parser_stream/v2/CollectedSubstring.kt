@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 /**
  * Object containing meta-info about substring collected for future processing.

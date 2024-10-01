@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 /**
  * Common interface for builders.

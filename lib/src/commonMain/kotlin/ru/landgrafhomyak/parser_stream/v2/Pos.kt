@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 /**
  * Object containing meta-info (for receiver) about current stream's position.

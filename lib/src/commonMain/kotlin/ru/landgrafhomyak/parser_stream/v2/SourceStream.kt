@@ -1,6 +1,4 @@
-package ru.landgrafhomyak.parser_stream
-
-import kotlin.coroutines.cancellation.CancellationException
+package ru.landgrafhomyak.parser_stream.v2
 
 /**
  * Asynchronous input char stream for parsing.

@@ -1,6 +1,6 @@
 @file:JvmName("_PredicateLambdas")
 
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 import kotlin.jvm.JvmName
 

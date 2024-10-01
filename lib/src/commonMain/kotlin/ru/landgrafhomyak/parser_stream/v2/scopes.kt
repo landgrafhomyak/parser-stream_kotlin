@@ -1,7 +1,7 @@
 @file:Suppress("REDUNDANT_INLINE_SUSPEND_FUNCTION_TYPE")
 @file:OptIn(ExperimentalContracts::class)
 
-package ru.landgrafhomyak.parser_stream
+package ru.landgrafhomyak.parser_stream.v2
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.InvocationKind
@@ -9,7 +9,7 @@ import kotlin.contracts.contract
 
 suspend inline fun <CS : CollectedSubstring, R> SourceStream<*, CS>.collect(predicate: Predicate, action: suspend (CS) -> R): R? {
 	contract {
-		callsInPlace(action, InvocationKind.EXACTLY_ONCE)
+		callsInPlace(action, InvocationKind.AT_MOST_ONCE)
 	}
 
 	val s = this.collect(predicate) ?: return null
@@ -20,6 +20,7 @@ suspend inline fun <CS : CollectedSubstring, R> SourceStream<*, CS>.collect(pred
 	}
 }
 
+@Suppress("LiftReturnOrAssignment")
 suspend inline fun <CS : CollectedSubstring, R> SourceStream<*, CS>.collectOrNull(predicate: Predicate, action: suspend (CS?) -> R): R {
 	contract {
 		callsInPlace(action, InvocationKind.EXACTLY_ONCE)
